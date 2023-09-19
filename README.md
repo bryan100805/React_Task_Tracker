@@ -2,9 +2,21 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# Extensions Used:
+
+ES7 React/Redux snippets
+
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `npm init create-react-app react-task-tracker`
+
+Run this in the terminal.
+
+### `npm i react-icons`
+
+Download the React icons in the current local working directory.
 
 ### `npm start`
 
@@ -19,6 +31,14 @@ You may also see any lint errors in the console.
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
+## For Development
+
+src folder
+
+## For Production
+
+build folder
+
 ### `npm run build`
 
 Builds the app for production to the `build` folder.\
@@ -28,6 +48,31 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm i -g serve`
+
+Install serve globally (terminal changed to command prompt)
+
+### `serve -s build -p 8000`
+
+Server hosting on port 8000 (Production build)
+
+### `npm i json-server`
+
+Install json server locally on current working directory
+In package.json, under "scripts", type out a new key as "server" and its corresponding value as "json-server --watch db.json --port 5000"
+
+db.json contains the data being stored in the server
+
+### `npm run server`
+
+Run server in terminal, server is being hosted on port 5000.
+
+### `npm i react-router-dom`
+
+Download react-router-dom locally for routing options
+
+## Other Scripts
 
 ### `npm run eject`
 
